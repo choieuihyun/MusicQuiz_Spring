@@ -21,13 +21,18 @@ public class SongsChild {
 
     private String question5;
 
+    private String answer;
+
+    private String lyrics;
+
     public SongsChild(Integer id,
                       String title,
                       String question1,
                       String question2,
                       String question3,
                       String question4,
-                      String question5) {
+                      String question5,
+                      String answer) {
         super();
 
         this.id = id;
@@ -37,6 +42,8 @@ public class SongsChild {
         this.question3 = question3;
         this.question4 = question4;
         this.question5 = question5;
+        this.answer = answer;
+
     }
 
 
@@ -68,6 +75,8 @@ public class SongsChild {
         return question5;
     }
 
+    public String getAnswer() { return answer; }
 
+    public String getLyrics() { return lyrics; }
 
 }
